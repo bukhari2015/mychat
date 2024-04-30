@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,6 +57,32 @@
     <h2>gmail email:bukharidarwisy2015@gmail.com</h2>
 
     <h2>microsoft email:bukharidarwisy2015@outlook.com</h2>
+
+    <h3>contact now!</h3>
+
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+          <label class="required" for="name">Your name:</label><br />
+          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="email">Your email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="message">Your message:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+<?php
+
+?>
+
+        
+          <input id="submit_button" type="submit" value="Send email"/>
+      </form>
 
 </body>
 

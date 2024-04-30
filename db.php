@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $mysqli = new mysqli("localhost","root","","mychat");
 
 // Check connection
@@ -17,5 +17,10 @@ if ($mysqli -> connect_errno) {
 $result = $mysqli->query("SELECT * FROM users");
 while ($row = $result->fetch_assoc()) {
     echo $row['name'].'/'.$row['email'].'/'.$row['password']."<br />\n";
+
+    $sql = "INSERT INTO users  (name, password, ?email)
+VALUES ('John', 'Doe', 'john@example.com')";
+
+
 }
-$mysqli -> close();
+$mysqli -> close(); -->

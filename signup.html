@@ -52,20 +52,23 @@
     </div>
     <h1>sign up</h1>
 
-<h3>username</h3>
+    <form action="db.php">
 
-<input id="username" placeholder="username" class="js-continue-input js-continue-focus-target js-octocaptcha-data-field signup-input form-control input-block flex-1 border-0 pl-0 box-shadow-none color-text-white f4 text-mono" required="" autofocus="autofocus" autocomplete="off" data-target="text-suggester.input" data-octocaptcha-field-name="username" aria-describedby="username" type="username" name="user[username]" spellcheck="false">
+<label for="username"><b>username</b></label>
+<input id="username" placeholder="username">
 
-<h3>email</h3>
+<label for="email"><b>email</b></label>
+<input type="email" id="email" name="email" placeholder="email">
 
-<input id="email" placeholder="email" class="js-continue-input js-continue-focus-target js-octocaptcha-data-field signup-input form-control input-block flex-1 border-0 pl-0 box-shadow-none color-text-white f4 text-mono" required="" autofocus="autofocus" autocomplete="off" data-target="text-suggester.input" data-octocaptcha-field-name="email_address" aria-describedby="email-err" type="email" name="user[email]" spellcheck="false">
+<label for="password"><b>password</b></label>
+<input type="password" id="password" name="password" placeholder="password">
 
-<h3>password</h3>
-
-<input id="password" placeholder="password" class="js-continue-input js-continue-focus-target js-octocaptcha-data-field signup-input form-control input-block flex-1 border-0 pl-0 box-shadow-none color-text-white f4 text-mono" required="" autofocus="autofocus" autocomplete="off" data-target="text-suggester.input" data-octocaptcha-field-name="password" aria-describedby="password-err" type="password" name="user[password]" spellcheck="false">
-
+<label for="re-type-password"><b>re type password</b></label>
+<input type="password"  id="password" name="re-type-password" placeholder="re type password">
 
 <input type="submit" value="sign up">
+
+</form>
 
 </body>
 
