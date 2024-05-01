@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="water.css">
-    <head><title>Home</title>
+    <head><title>register</title>
         <link rel="icon" type="image/x-icon" href="images/logo.png"></head>
     <style>
         body {
@@ -44,15 +45,27 @@
 </head>
 <body>
     <div class="navbar">
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="signup.html"><i class="fa fa-fw fa-user"></i> sign up</a>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="signup.html"><i class="fa fa-fw fa-user"></i> sign up</a>
         <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
         <a href="gmail.html"><i class="fa fa-fw fa-envelope"></i> contact</a>
     </div>
-    <h1>chat to someone</h1>
 
-<img src="images/stayle.png">
+    
 
+<h1>sign up</h1>
+
+<form action="test3.php" method="get">
+
+<input type="username" name="username" id="username" placeholder="username">
+
+<input type="email" name="email" id="email" placeholder="email">
+
+<input type="password" name="password" id="password" placeholder="password">
+
+<input type="submit" value="sign up">
+
+    </form>
 
 </body>
 

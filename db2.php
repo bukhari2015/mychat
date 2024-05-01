@@ -1,20 +1,26 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mychat";
+$mysqli = new mysqli("localhost","root","","mychat");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-$sql = "INSERT INTO users (name, email, password)
-VALUES ('John', 'Doe', 'john@example.com')";
-
-if ($conn->query($sql) === true) {
-  echo "your account created successfully";
-} else {
-  echo "cannot create your account";
+// Check connection
+if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
 }
 
-$conn->close();
-?>
+// Perform query
+// if ($result = $mysqli->query("SELECT * FROM users")) {
+//   echo "Returned rows are: " . $result -> num_rows;
+//   // Free result set
+//   $result -> free_result();
+// }
+
+$result = $mysqli->query("SELECT * FROM users");
+while ($row = $result->fetch_assoc()) {
+    echo $row['name'].'/'.$row['email'].'/'.$row['password']."<br />\n";
+
+    $sql = "INSERT INTO users  (name, password, ?email)
+VALUES ('John', 'Doe', 'john@example.com')";
+
+
+}
+$mysqli -> close();
