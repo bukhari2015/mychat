@@ -4,6 +4,8 @@ $username = "root";
 $password = "";
 $dbname = "mychat";
 
+
+
 $username2 = $_GET['username'];
 $email = $_GET['email'];
 $passwordtest = $_GET['password'];
