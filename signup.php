@@ -46,7 +46,7 @@
 <body>
     <div class="navbar">
         <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a class="active" href="signup.html"><i class="fa fa-fw fa-user"></i> sign up</a>
+        <a class="active" href="signup.php"><i class="fa fa-fw fa-user"></i> sign up</a>
         <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
         <a href="gmail.html"><i class="fa fa-fw fa-envelope"></i> contact</a>
     </div>
@@ -55,7 +55,7 @@
 
 <h1>sign up</h1>
 
-<form action="testuser.php" method="get">
+<form action="signuser.php" method="get">
 
 <input type="username" name="username" id="username" placeholder="username">
 
