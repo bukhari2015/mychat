@@ -57,9 +57,15 @@
 
 <form action="signuser.php" method="get">
 
+<h2>username</h2>
+
 <input type="username" name="username" id="username" placeholder="username">
 
+<h2>email</h2>
+
 <input type="email" name="email" id="email" placeholder="email">
+
+<h2>passwords</h2>
 
 <input type="password" name="password" id="password" placeholder="password">
 
